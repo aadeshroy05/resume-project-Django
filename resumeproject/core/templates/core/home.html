@@ -1,0 +1,40 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %}
+    <div class="mt-5">
+      <div class="text-center">
+        <img src="{% static 'core/images/aadeshroy.jpg' %}" alt="Profile Picture"
+        class="img-thumbnail" width="250px" height="150px">
+      </div>
+      <div class="mt-5 text-white mx-5 text-justify">
+        <h1 class="font-weight-bold st-font">Hello,</h1>
+        <div class="px-4" style="line-height:2rem;">
+          <p style="text-indent:100px;">
+              I am <b class="text-warning">Aadesh Roy</b> having 1 year of full-stack
+              web develoment experience for global businesses, I offer the technical
+              expertise you are seeking for your web developer position.
+          </p>
+          <p>
+            Since earning my bachelor's degree in Computer Science from DHA Suffa
+            Univeristy, I have served as a web developer at <b class="text-warning">
+            Vivid Labs</b> , one of biggest premier digital marketing and web development
+            firm. In this position, I have led web development projects for clients in
+            diverse industries technology, manufacturing, pharmaceutical, hospitality,
+            retail and financial services</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+               , when an unknown printer took a galley of type and scrambled it to make
+                a type specimen book. It has survived not only five centuries, but also the
+                 leap into electronic typesetting, remaining essentially unchanged.
+                 It was popularised in the 1960s with the release of Letraset sheets
+                  containing Lorem Ipsum passages, and more recently with desktop publishing
+                  software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+        </div>
+      </div>
+        <div class="text-center">
+          <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire me</a>
+          <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+        </div>
+    </div>
+{% endblock content %}
